@@ -292,9 +292,9 @@ plt.show()
 plt.plot(aggTrades_dataset[aggTrades_dataset.iloc[:, 6] == True].iloc[:, 1], aggTrades_dataset[aggTrades_dataset.iloc[:, 6] == True].iloc[:, 2], marker="o", linestyle="", color="blue", label="Buyer Trades")
 plt.plot(aggTrades_dataset[aggTrades_dataset.iloc[:, 6] == False].iloc[:, 1], aggTrades_dataset[aggTrades_dataset.iloc[:, 6] == False].iloc[:, 2], marker="o", linestyle="", color="red", label="Maker Trades")
 
-'''# Plot the best price matches as circles and the other trades as squares
+# Plot the best price matches as circles and the other trades as squares
 plt.plot(aggTrades_dataset[aggTrades_dataset.iloc[:, 7] == True].iloc[:, 1], aggTrades_dataset[aggTrades_dataset.iloc[:, 7] == True].iloc[:, 2], marker="o", linestyle="", color="green", label="Best Price Matches")
-plt.plot(aggTrades_dataset[aggTrades_dataset.iloc[:, 7] == False].iloc[:, 1], aggTrades_dataset[aggTrades_dataset.iloc[:, 7] == False].iloc[:, 2], marker="s", linestyle="", color="purple", label="Other Trades")'''
+plt.plot(aggTrades_dataset[aggTrades_dataset.iloc[:, 7] == False].iloc[:, 1], aggTrades_dataset[aggTrades_dataset.iloc[:, 7] == False].iloc[:, 2], marker="s", linestyle="", color="purple", label="Other Trades")
 
 # Add a legend to the chart
 plt.legend()
