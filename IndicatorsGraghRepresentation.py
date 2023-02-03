@@ -20,8 +20,8 @@ klines_12h_dataset = pd.read_csv('Data/klines/BTCUSDT-12h-2023-01-21.csv', heade
 klines_15m_dataset = pd.read_csv('Data/klines/BTCUSDT-15m-2023-01-21.csv', header=None)
 klines_30m_dataset = pd.read_csv('Data/klines/BTCUSDT-30m-2023-01-21.csv', header=None)
 
-trades_dataset = pd.read_csv('Data/BTCUSDT-trades-2023-01-21.csv')
-aggTrades_dataset = pd.read_csv('Data/BTCUSDT-aggTrades-2023-01-21.csv', header=None)
+#trades_dataset = pd.read_csv('Data/BTCUSDT-trades-2023-01-21.csv')
+#aggTrades_dataset = pd.read_csv('Data/BTCUSDT-aggTrades-2023-01-21.csv', header=None)
 
 
 ###### agroup
@@ -287,7 +287,7 @@ plt.plot(klines_5m_dataset.iloc[:, 4][-wins:], 'k', lw = 1)
 plt.plot(supertrend[-wins:], 'red', lw=1)
 plt.show()
 
-
+'''
 # Plot the trades made by the buyer in blue and the trades made by the maker in red
 plt.plot(aggTrades_dataset[aggTrades_dataset.iloc[:, 6] == True].iloc[:, 1], aggTrades_dataset[aggTrades_dataset.iloc[:, 6] == True].iloc[:, 2], marker="o", linestyle="", color="blue", label="Buyer Trades")
 plt.plot(aggTrades_dataset[aggTrades_dataset.iloc[:, 6] == False].iloc[:, 1], aggTrades_dataset[aggTrades_dataset.iloc[:, 6] == False].iloc[:, 2], marker="o", linestyle="", color="red", label="Maker Trades")
@@ -321,6 +321,4 @@ ax.set_zlabel('Quantity')
 
 # Show the plot
 plt.show()
-
-#introduzir todos os indicadores em todos os timeframes
-#criar grafico que represente os dados dos cvs trades e aggTrades
+'''
